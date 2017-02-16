@@ -10,13 +10,13 @@ namespace SKL_MVC.Controllers
     {
         public ActionResult Index()
         {
-            return View(); 
+            var list = new List<string>() { "SKL","Insuraance","Member","Ebill" };
+            return View(list); 
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "Your application description page."; 
             return View();
         }
 
